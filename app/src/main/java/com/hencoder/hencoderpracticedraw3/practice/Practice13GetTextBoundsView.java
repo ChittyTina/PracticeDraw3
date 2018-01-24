@@ -42,6 +42,7 @@ public class Practice13GetTextBoundsView extends View {
 
         Rect textBounds = new Rect();
         paint2.getTextBounds(text1, 0, text1.length(), textBounds);
+        // 画一条 baseline 对称线 方便理解
         yOffsets[0] = - (textBounds.top + textBounds.bottom) / 2;
 
         paint2.getTextBounds(text2, 0, text2.length(), textBounds);
